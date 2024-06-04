@@ -5,6 +5,8 @@ import SideBar from './components/SideBar';
 import Logo from './components/Logo';
 import SearchBar from './components/SearchBar';
 import CardPage from './components/CardPage';
+import BecomeSeller from './components/BecomeSeller';
+import ImageSlider from './components/ImageSlider';
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
       {/* <SideBar/> */}
       {/* <Logo/> */}
       {/* <SearchBar/> */}
-      <CardPage/>
+      {/* <CardPage/> */}
+      {/* <BecomeSeller/> */}
+      <ImageSlider/>
     </div>
   );
 }
