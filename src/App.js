@@ -7,6 +7,8 @@ import SearchBar from './components/SearchBar';
 import CardPage from './components/CardPage';
 import BecomeSeller from './components/BecomeSeller';
 import ImageSlider from './components/ImageSlider';
+import ImageGallary from './components/ImageGallary';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
       {/* <SearchBar/> */}
       {/* <CardPage/> */}
       {/* <BecomeSeller/> */}
-      <ImageSlider/>
+      {/* <ImageSlider/> */}
+      {/* <ImageGallary/> */}
+      <Dashboard/>
     </div>
   );
 }

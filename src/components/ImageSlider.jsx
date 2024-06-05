@@ -1,60 +1,38 @@
 import React from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { data } from "../constant/dummyData";
 
 const ImageSlider = () => {
-  // $('.center').slick({
-  //     centerMode: true,
-  //     centerPadding: '60px',
-  //     slidesToShow: 3,
-  //     responsive: [
-  //       {
-  //         breakpoint: 768,
-  //         settings: {
-  //           arrows: false,
-  //           centerMode: true,
-  //           centerPadding: '40px',
-  //           slidesToShow: 3
-  //         }
-  //       },
-  //       {
-  //         breakpoint: 480,
-  //         settings: {
-  //           arrows: false,
-  //           centerMode: true,
-  //           centerPadding: '40px',
-  //           slidesToShow: 1
-  //         }
-  //       }
-  //     ]
-  //   });
-  var settings = {
-    dots: true,
+  const settings = {
+    className: "center",
+    centerMode: true,
     infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 2,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
   };
   return (
-    <Slider {...settings}>
-      <div>
-        <img src="blob:https://xd.adobe.com/c75c96e6-986e-4d02-86f3-eb7037a39621" />
-      </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
-    </Slider>
+    <div className="slider-container max-w-4xl mx-10 bg-black p-10 ">
+      <Slider {...settings}>
+        {data.map((item) => (
+          <div className="rounded-xl bg-gray-100 flex flex-col items-center ">
+            <img
+              src={item.image}
+              alt=""
+              className="w-full h-full object-cover rounded-lg"
+            />
+
+            <div className="text-start"> {item.title}</div>
+            <div className="flex flex-row space-x-4 ">
+              <h3>${item.price}</h3>
+              <h3>{item.star}</h3>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 };
 
