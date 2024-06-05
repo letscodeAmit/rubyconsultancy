@@ -30,9 +30,9 @@ const App = () => {
         </aside>
 
         {/* Cards Section */}
-        <main className="flex-1 p-4 bg-white rounded shadow">
+        <div className="flex-1 p-4 rounded">
           <CardPage />
-        </main>
+        </div>
 
         {/* Photo Gallery */}
         <aside className="bg-white w-1/4 p-4 rounded shadow">
