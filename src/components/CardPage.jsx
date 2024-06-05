@@ -6,8 +6,8 @@ import { PiShareFat, PiShareFatBold } from "react-icons/pi";
 
 const CardPage = () => {
   return (
-    <div className="m-20 space-y-1">
-      <div class="relative flex w-full max-w-[26rem] flex-col rounded-t-lg bg-slate-300 bg-clip-border text-gray-700 shadow-lg mt-20 p-5">
+    <div className=" space-y-1">
+      <div class="relative flex w-full max-w-[26rem] flex-col rounded-t-lg bg-slate-300 bg-clip-border text-gray-700 shadow-lg p-5">
         <div className="flex flex-row items-center justify-between">
           <div class="flex flex-row items-center ">
             <div class="flex-shrink-0">
@@ -46,17 +46,14 @@ const CardPage = () => {
       <div class="p-6 rounded-b-lg w-full max-w-[26rem]  bg-slate-300">
         <div class="flex items-center space-x-5 mb-3">
           <div>
-            
             <FaRegHeart />
             <h4>9.8k</h4>
           </div>
           <div>
-           
             <FaRegComment />
             <h4>8.6k</h4>
           </div>
           <div>
-           
             <PiShareFatBold />
             <h4>7.2k</h4>
           </div>

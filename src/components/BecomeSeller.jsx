@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const BecomeSeller = () => {
-    return (
-        <div className="bg-green-200 max-w-xs max-h- mt-7 rounded-md" >
-          <h1 className="text-white font-serif text-base">Become a Seller</h1>
-        </div>
-      );
-}
+  return (
+    <button className="bg-[#88C2BB] hover:bg-[#88C2BB] text-white font-bold py-2 px-4 rounded w-full">
+      Become a Seller
+    </button>
+  );
+};
 
-export default BecomeSeller
+export default BecomeSeller;
